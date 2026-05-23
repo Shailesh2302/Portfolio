@@ -2,8 +2,8 @@
 
 @theme inline {
   --color-background: #ffffff;
-  --color-foreground: #1a1a1a;
-  --color-muted: #333333;
+  --color-foreground: #000000;
+  --color-muted: #555555;
   --color-accent: #d4a017;
   --color-border: #e5e5e5;
   --color-card: #fafaf9;

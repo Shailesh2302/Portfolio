@@ -1,11 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
   {
     name: "OmniMind",
+    image: "/images/omnimind.png",
     description:
       "Distributed multi-modal AI system for semantic retrieval across videos, PDFs, DOCX, and spreadsheets.",
     url: "https://github.com/Shailesh2302/OmniMind",
@@ -13,6 +15,7 @@ const projects = [
   },
   {
     name: "OSSBeat",
+    image: "/images/ossbeat.png",
     description:
       "Developer platform for discovering, analyzing, and selecting GitHub repositories for open-source contributions.",
     url: "https://ossbeat.vercel.app",
@@ -21,6 +24,7 @@ const projects = [
   },
   {
     name: "SensAI",
+    image: "/images/sensai.png",
     description:
       "AI-powered career coaching platform — natural language to insights for career development.",
     url: "https://sensai-ten-tan.vercel.app",
@@ -29,6 +33,7 @@ const projects = [
   },
   {
     name: "ZapCode",
+    image: "/images/zapcode.png",
     description:
       "AI-powered platform that converts natural language into fully functional code, reducing manual coding time by up to 70%.",
     url: "https://zap-code.vercel.app",
@@ -62,10 +67,19 @@ export default function Projects() {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 whileHover={{ y: -4 }}
                 onClick={() => window.open(project.url || project.github, "_blank", "noopener noreferrer")}
-                className="group block p-6 border border-border rounded-lg bg-card hover:border-accent transition-all duration-300 cursor-pointer"
+                className="group block p-0 border border-border rounded-lg bg-card hover:border-accent transition-all duration-300 cursor-pointer overflow-hidden"
               >
+                <div className="relative w-full aspect-video bg-foreground/5 overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-serif text-xl group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
                     {project.name}
                   </h3>
                   <svg
@@ -104,6 +118,7 @@ export default function Projects() {
                       {t}
                     </span>
                   ))}
+                </div>
                 </div>
               </motion.div>
             ))}
