@@ -6,11 +6,17 @@ import AnimatedSection from "./AnimatedSection";
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["TypeScript", "Rust", "Python"],
+    skills: ["TypeScript", "Python", "Rust"],
   },
   {
     title: "Generative AI & LLM Systems",
-    skills: ["RAG Pipelines", "AI Agents", "Multi-Modal AI", "Fine-Tuning", "Vector Databases"],
+    skills: [
+      "RAG Pipelines",
+      "AI Agents",
+      "Multi-Modal AI",
+      "Fine-Tuning",
+      "Vector Databases",
+    ],
   },
   {
     title: "AI Frameworks & Tooling",
@@ -18,7 +24,7 @@ const skillCategories = [
   },
   {
     title: "Backend Technologies",
-    skills: ["Node.js", "Express.js", "PostgreSQL", "Redis"],
+    skills: ["Node.js", "FastAPI", "Express.js", "PostgreSQL", "Redis"],
   },
   {
     title: "Frameworks / Libraries",
@@ -30,7 +36,12 @@ const skillCategories = [
   },
   {
     title: "Core Skills",
-    skills: ["Communication", "System Design", "Distributed Systems", "Strategic Planning"],
+    skills: [
+      "Communication",
+      "System Design",
+      "Distributed Systems",
+      "Strategic Planning",
+    ],
   },
 ];
 
