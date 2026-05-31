@@ -40,6 +40,14 @@ const projects = [
     github: "https://github.com/Shailesh2302/ZapCode",
     tech: ["React", "TypeScript", "WebContainer", "Gemini AI"],
   },
+  {
+    name: "Backend CLI",
+    image: "/images/backend-cli.png",
+    description:
+      "A modern open-source backend project generator that scaffolds full backend apps in seconds with Express, Fastify, Hono, or NestJS — supporting TypeScript, PostgreSQL, MongoDB, Docker, and more.",
+    url: "https://github.com/Shailesh2302/backend-CLI",
+    tech: ["Node.js", "TypeScript", "Express", "Fastify", "Hono", "NestJS", "Prisma", "Docker"],
+  },
 ];
 
 export default function Projects() {
